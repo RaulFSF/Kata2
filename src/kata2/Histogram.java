@@ -16,7 +16,6 @@ public class Histogram<T>{
     
     public Map getHistogram(){
         Map<T, Integer> histogram = new HashMap<T, Integer>();
-        
         for (T key : data) {
             histogram.put(key, histogram.containsKey(key) ? histogram.get(key) + 1 : 1);
         }
